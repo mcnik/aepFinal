@@ -25,4 +25,10 @@ public class DateValidatorTest {
         assertFalse(dateValidator.validator("11/20/2012", "dd/MM/yyyy"));
     }
 
+    @Test
+    public void testYearIsInvalid() {
+        DateValidator dateValidator = new DateValidator();
+        assertFalse(dateValidator.validator("31/20/191", "dd/MM/yyyy"));
+    }
+
 }
