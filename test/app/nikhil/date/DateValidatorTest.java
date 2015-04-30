@@ -13,4 +13,11 @@ public class DateValidatorTest {
         assertFalse(dateValidator.validator(null, "dd/MM/yyyy"));
     }
 
+    
+    @Test
+    public void testDayIsInvalid() {
+        DateValidator dateValidator = new DateValidator();
+        assertFalse(dateValidator.validator("32/02/2012", "dd/MM/yyyy"));
+    }
+
 }
