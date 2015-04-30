@@ -43,4 +43,9 @@ public class DateValidatorTest {
         assertTrue(dateValidator.validator("29/02/2012", "dd/MM/yyyy"));
     }
 
+    @Test
+    public void testDateFeb29_2011() {
+        DateValidator dateValidator = new DateValidator();
+        assertFalse(dateValidator.validator("29/02/2011", "dd/MM/yyyy"));
+    }
 }
