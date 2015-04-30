@@ -22,13 +22,19 @@ public class DateValidatorTest {
     @Test
     public void testMonthIsInvalid() {
         DateValidator dateValidator = new DateValidator();
-        assertFalse(dateValidator.validator("11/20/2012", "dd/MM/yyyy"));
+        assertFalse(dateValidator.validator("11/20/2014", "dd/MM/yyyy"));
     }
 
     @Test
     public void testYearIsInvalid() {
         DateValidator dateValidator = new DateValidator();
         assertFalse(dateValidator.validator("31/20/191", "dd/MM/yyyy"));
+    }
+
+    @Test
+    public void testDateFormatIsInvalid() {
+        DateValidator dateValidator = new DateValidator();
+        assertFalse(dateValidator.validator("2015/02/02", "dd/MM/yyyy"));
     }
 
 }
