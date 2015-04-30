@@ -17,7 +17,6 @@ public class DateFormatValidator {
 
         try {
             Date d = sdf.parse(date);
-            System.out.println(d);
         } catch (ParseException e) {
             e.printStackTrace();
             return false;
