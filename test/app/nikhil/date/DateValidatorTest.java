@@ -52,7 +52,13 @@ public class DateValidatorTest {
     @Test
     public void twentyElevenHasFebTwentyEight() {
         DateValidator dateValidator = new DateValidator();
-        assertTrue(dateValidator.validator("28/02/2011", "dd/MM/yyyy"));
+        assertTrue(dateValidator.validator("28/02/2014", "dd/MM/yyyy"));
+    }
+
+    @Test
+    public void JanFirstTwoThousandIsAValidDate() {
+        DateValidator dateValidator = new DateValidator();
+        assertTrue(dateValidator.validator("01/01/2000", "dd/MM/yyyy"));
     }
 
 }
