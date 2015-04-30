@@ -32,6 +32,13 @@ public class DateValidatorTest {
     }
 
     @Test
+    public void threeDigitNumberInvalidAsDay() {
+        DateValidator dateValidator = new DateValidator();
+        assertTrue(dateValidator.validator("131/01/2015", "dd/MM/yyyy"));
+    }
+
+
+    @Test
     public void yyyyMMDDIsInvalid() {
         DateValidator dateValidator = new DateValidator();
         assertFalse(dateValidator.validator("2015/02/02", "dd/MM/yyyy"));
