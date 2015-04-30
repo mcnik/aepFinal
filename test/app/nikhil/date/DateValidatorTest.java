@@ -43,34 +43,4 @@ public class DateValidatorTest {
         assertTrue(dateValidator.validator("29/02/2012", "dd/MM/yyyy"));
     }
 
-    /*@Test
-    public void testDateFeb29_2011() {
-        DateValidator dateValidator = new DateValidator();
-        assertFalse(dateValidator.validator("29/02/2011", "dd/MM/yyyy"));
-    }
-
-    @Test
-    public void testDateFeb28() {
-        DateValidator dateValidator = new DateValidator();
-        assertTrue(dateValidator.validator("28/02/2011", "dd/MM/yyyy"));
-    }
-
-    @Test
-    public void testDateIsValid_1() {
-        DateValidator dateValidator = new DateValidator();
-        assertTrue(dateValidator.validator("31/01/2012", "dd/MM/yyyy"));
-    }
-
-    @Test
-    public void testDateIsValid_2() {
-        DateValidator dateValidator = new DateValidator();
-        assertTrue(dateValidator.validator("30/04/2012", "dd/MM/yyyy"));
-    }
-
-    @Test
-    public void testDateIsValid_3() {
-        DateValidator dateValidator = new DateValidator();
-        assertTrue(dateValidator.validator("31/05/2012", "dd/MM/yyyy"));
-    }*/
-
 }
