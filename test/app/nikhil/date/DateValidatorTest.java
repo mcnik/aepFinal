@@ -50,7 +50,7 @@ public class DateValidatorTest {
     }
 
     @Test
-    public void twentyElevenHasFebTwentyEight() {
+    public void twentyFourteenHasFebTwentyEight() {
         DateValidator dateValidator = new DateValidator();
         assertTrue(dateValidator.validator("28/02/2014", "dd/MM/yyyy"));
     }
